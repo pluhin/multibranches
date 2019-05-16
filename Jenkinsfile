@@ -22,7 +22,10 @@ pipeline {
         }
         stage('Packing test') {
             steps {
-                sh "ls -l"
+                sh """
+ 		echo "Hello!!"
+		 ls -l
+		"""
             }
         }
     }
