@@ -15,6 +15,7 @@ pipeline {
             steps {
                 sh '''
                 tar -zcvf /tmp/package.tar.gz  ./
+                ls -l
                 '''
                 deleteDir()
                 sh "mv /tmp/package.tar.gz  ./"
